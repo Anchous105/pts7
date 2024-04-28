@@ -4,13 +4,13 @@ import tkinter
 def exchange():
     sum=float(sum_BYN_entry.get())
     result1=float(sum/3.28)
-    result2 = float(sum / 3.51)
-    result3 = float(sum * 28.1)
-    result1 = tkinter.Label(header_frame, text=f'{result1:.2f}', font='Arial, 10')
+    result2=float(sum / 3.51)
+    result3=float(sum * 28.1)
+    result1=tkinter.Label(header_frame, text=f'{result1:.2f}', font='Arial, 10')
     result1.grid(row=7, column=1)
-    result2 = tkinter.Label(header_frame, text=f'{result2:.2f}', font='Arial, 10')
+    result2=tkinter.Label(header_frame, text=f'{result2:.2f}', font='Arial, 10')
     result2.grid(row=8, column=1)
-    result3 = tkinter.Label(header_frame, text=f'{result3:.2f}', font='Arial, 10')
+    result3=tkinter.Label(header_frame, text=f'{result3:.2f}', font='Arial, 10')
     result3.grid(row=9, column=1)
 
 root = tkinter.Tk()
@@ -38,7 +38,7 @@ RUB_course = tkinter.Label(header_frame, text = 'RUB         1     28,1', font='
 RUB_course.grid(row=3, column=0, columnspan=2)
 
 
-sum_BYN = tkinter.Label(header_frame, text='Введите сумму', font='Arial, 10')
+sum_BYN = tkinter.Label(header_frame, text='Введите сумму(BYN)', font='Arial, 10')
 sum_BYN.grid(row=4, column=0)
 
 sum_BYN_entry = tkinter.Entry(header_frame, font='Arial, 10', justify='center')
